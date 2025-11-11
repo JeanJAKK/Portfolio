@@ -56,7 +56,7 @@ header li:hover {
 header ul a,
 footer span span {
   text-decoration: none;
-  color: #00ffff;
+  color: white;
 }
 span p {
   font-size: x-large;
