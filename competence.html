@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta name="description" content="Site portfolio" />
+    <meta name="author" content="Jean KPETSI" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mon portfolio</title>
+  <head>
+  <body>
+    <p class="button buttonx" style="color: black;">Mes compétences</p>
+    <div class="global-container" >
+         
+      <div class="skills">
+            <p>Soft skills</p>
+            
+          <div class="competence">
+              <span class="libelle">Gestion de projet</span>
+              <div class="barre-fond">
+                  <div class="barre-progression" data-niveau="80"></div>
+              </div>
+          </div>
+
+           <div class="competence">
+              <span class="libelle">Résolution de problème</span>
+              <div class="barre-fond">
+                  <div class="barre-progression" data-niveau="65"></div>
+              </div>
+          </div>
+          
+          <div class="competence">
+              <span class="libelle">Adaptabilité</span>
+              <div class="barre-fond">
+                  <div class="barre-progression" data-niveau="80"></div>
+              </div>
+          </div>
+          
+          <div class="competence">
+              <span class="libelle">Collaborativité</span>
+              <div class="barre-fond">
+                  <div class="barre-progression" data-niveau="65"></div>
+              </div>
+          </div>
+      </div>
+
+          <!-- skills separator -->
+
+           
+      <div class="skills">
+         <p>Hard skills</p>
+
+          <div class="competence">
+              <span class="libelle">HTML - CSS</span>
+              <div class="barre-fond">
+                  <div class="barre-progression" data-niveau="80"></div>
+              </div>
+          </div>
+
+          <div class="competence">
+            <span class="libelle">JavaScript</span>
+            <div class="barre-fond">
+                <div class="barre-progression" data-niveau="90"></div>
+            </div>
+          </div>
+
+          <div class="competence">
+              <span class="libelle">Java</span>
+              <div class="barre-fond">
+                  <div class="barre-progression" data-niveau="65"></div>
+              </div>
+          </div>
+
+           <div class="competence">
+              <span class="libelle">Python</span>
+              <div class="barre-fond">
+                  <div class="barre-progression" data-niveau="65"></div>
+              </div>
+          </div>
+
+           <div class="competence">
+              <span class="libelle">React</span>
+              <div class="barre-fond">
+                  <div class="barre-progression" data-niveau="65"></div>
+              </div>
+          </div>
+
+          <div class="competence">
+              <span class="libelle">Git - GitHub</span>
+              <div class="barre-fond">
+                  <div class="barre-progression" data-niveau="90"></div>
+              </div>
+          </div>
+      </div>  
+    </div>   
+  <script>
+    // interaction bouton
+    const button = document.querySelector('.button');
+    button.addEventListener('mouseenter', () => {
+      button.classList.add('btn-react');
+    });
+    button.addEventListener('mouseleave', () => {
+      button.classList.remove('btn-react');
+    });
+    
+    // Couleur des éléments nav
+    window.parent.document.querySelector('[href="propos.html"]').style.color = "#FFFFFF";
+    window.parent.document.querySelector('[href="accueil.html"]').style.color = "#FFFFFF";
+    window.parent.document.querySelector('[href="projet.html"]').style.color = "#FFFFFF";
+    window.parent.document.querySelector('[href="competence.html"]').style.color = "#00FFFF";
+    window.parent.document.querySelector('[href="contact.html"]').style.color = "#FFFFFF";
+  </script>
+</div>
+  </body>
+</html>

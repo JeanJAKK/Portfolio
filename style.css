@@ -213,3 +213,39 @@ img {
   height: 1.5em;
   font-size: large;
 }
+
+/*Compétences.html style*/
+/*skills */
+.competence {
+  margin-bottom: 20px;
+}
+
+/* Style du libellé (le texte) */
+.libelle {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Barre de fond (la partie grise/claire) */
+.barre-fond {
+  width: 100%;
+  height: 12px;
+  background-color: #e0e0e0; /* Couleur grise claire */
+  border-radius: 6px; /* Bords arrondis */
+  overflow: hidden; /* Important pour contenir la barre de progression */
+}
+
+/* Barre de progression (la partie turquoise/cyan) */
+.barre-progression {
+  height: 100%;
+  background-color: #1abc9c; /* Couleur Turquoise/Cyan */
+  border-radius: 6px;
+  width: 50%; /* Commence à 0% pour l'animation */
+  transition: width 1s ease-out; /* Animation douce */
+}
+
+.global-container {
+  display: flex;
+  justify-content: space-evenly;
+}
