@@ -1,3 +1,4 @@
+/*index.html style*/
 body,
 html {
   background-color: antiquewhite;
@@ -9,20 +10,10 @@ iframe {
   padding: 0%;
 }
 
-p {
+#p-accueil {
   font-size: 32px;
   margin-left: 6rem;
   text-align: justify;
-}
-
-#button {
-  background-color: #00ffff;
-  border-radius: 10px;
-  border: 1px, solid, #00ffff;
-  width: 15rem;
-  height: 3rem;
-  margin-left: 10rem;
-  font-size: large;
 }
 
 header {
@@ -46,11 +37,13 @@ header ul {
   justify-content: space-evenly;
   gap: 4.5rem;
   padding-right: 7.5rem;
+  /*transition: transform 0.3s ease-out;*/
 }
 
 header li:hover {
   transform: scale(1.5);
   transition-duration: s;
+  transition: transform 0.3s ease-out;
 }
 
 header ul a,
@@ -58,18 +51,20 @@ footer span span {
   text-decoration: none;
   color: white;
 }
+
 span p {
   font-size: x-large;
   font-weight: bolder;
   margin-left: 1.5rem;
 }
 
-p span {
+p span,
+#prenom {
   color: #00ffff;
 }
 
 footer {
-  background-color: blanchedalmond;
+  background-color: antiquewhite;
   align-items: center;
   width: 100%;
   position: fixed;
@@ -86,6 +81,42 @@ footer {
   padding-right: 7.5rem;
 }
 
+.currentLink {
+  color: #00ffff;
+}
+/* Accueil.html style*/
+div p {
+  font-size: 22px;
+}
+
+.button {
+  background-color: #00ffff;
+  border-radius: 10px;
+  border: 1px, solid, #00ffff;
+  box-shadow: 3px, 3px, 3px, #00ffff;
+  width: 15rem;
+  height: 3rem;
+  margin-left: 10rem;
+  font-size: large;
+  box-shadow: 5px 5px 10px black;
+  transition: background-color 0.3s;
+  transition: 0.3s;
+  color: white;
+}
+
+.btn-react {
+  transform: scale(1.05);
+  background-color: blanchedalmond;
+  border-radius: 10px;
+  color: #00ffff;
+  box-shadow: 10px 10px 15px #00ffff;
+  border: 1px, solid, #00ffff;
+  width: 15rem;
+  height: 3rem;
+  margin-left: 10rem;
+  font-size: large;
+}
+
 .box-accueil {
   display: flex;
   justify-content: space-between;
@@ -93,5 +124,15 @@ footer {
 
 img {
   border-radius: 100%;
-  width: 23rem;
+  width: 20rem;
+  margin-right: 4.5rem;
+  margin-bottom: 5rem;
+}
+/*Propos */
+#tof {
+  margin-bottom: 25rem;
+}
+
+#p-propos {
+  padding-left: 1.5rem;
 }

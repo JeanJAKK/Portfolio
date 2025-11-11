@@ -10,24 +10,34 @@
   <head>
   <body class="box-accueil">
     <div>
-      <p>
+       <p id="p-accueil">
         Je suis <span>Jean,</span> un développeur logiciel en devenir, <br>
             passionné par le développement, le web et le design !  <br> <br>
       </p>
       <a href="projet.html">
-        <button id="button">Voir mes projets</button>
+        <button id="button" class="button">Voir mes projets</button>
       </a>
     </div>
     <div>
       <img src="dev.png" alt="développeur">
     </div>
     <script>
-      window.addEventListener('load', () => {
-        const current = window.parent.document.querySelector('[href="accueil.html"]');
-        if(current){
-          current.style.color = "#00FFFF";
-        }     
+      // interaction bouton
+      const button = document.querySelector('.button');
+      button.addEventListener('mouseenter', () => {
+        button.classList.add('btn-react');
       });
+      button.addEventListener('mouseleave', () => {
+        button.classList.remove('btn-react');
+      });
+
+      // Couleur éléments nav
+       // Couleur des éléments nav
+     window.parent.document.querySelector('[href="propos.html"]').style.color = "#FFFFFF";
+     window.parent.document.querySelector('[href="accueil.html"]').style.color = "#00FFFF";
+     window.parent.document.querySelector('[href="projet.html"]').style.color = "#FFFFFF";
+     window.parent.document.querySelector('[href="competence.html"]').style.color = "#FFFFFF";
+     window.parent.document.querySelector('[href="contact.html"]').style.color = "#FFFFFF";
     </script>
   </body>
 </html>

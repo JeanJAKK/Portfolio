@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta name="description" content="Site portfolio" />
+    <meta name="author" content="Jean KPETSI" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mon portfolio</title>
+  <head>
+  <body class="box-accueil">
+    <div>
+       <p id="p-propos">
+        Je m'appelle <span>Jean,</span> passionné par le <br>
+        développement et la création de sites web modernes et interactifs.  <br><br>
+        Je suis actuellement étudiant en <span>développement logiciel,</span><br>
+         et je cherche à améliorer mes compétences en <br>
+         développement web (HTML, CSS, JavaScript, React), Java et Python.<br><br>
+        J'adore transformer mes idées en projets concrets <br>
+        et expérimenter avec les nouvlles technonlogies.
+
+      </p>
+      <a href="cv.pdf" download="Dev-Jean-cv.pdf">
+        <button id="button" class="button">Télécharger mon CV</button>
+      </a>
+    </div>
+    <div id="tof">
+      <img src="dev.jpeg" alt="développeur">
+    </div> 
+    <script>
+      // interaction bouton
+      const button = document.querySelector('.button');
+      button.addEventListener('mouseenter', () => {
+        button.classList.add('btn-react');
+      });
+      button.addEventListener('mouseleave', () => {
+        button.classList.remove('btn-react');
+      });
+      
+      // Couleur des éléments nav
+     window.parent.document.querySelector('[href="propos.html"]').style.color = "#00FFFF";
+     window.parent.document.querySelector('[href="accueil.html"]').style.color = "#FFFFFF";
+     window.parent.document.querySelector('[href="projet.html"]').style.color = "#FFFFFF";
+     window.parent.document.querySelector('[href="competence.html"]').style.color = "#FFFFFF";
+     window.parent.document.querySelector('[href="contact.html"]').style.color = "#FFFFFF";
+    </script>
+  </body>
+</html>
