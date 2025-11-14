@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr" class="contact-body">
+  <head>
+    <meta name="description" content="Site portfolio" />
+    <meta name="author" content="Jean KPETSI" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mon portfolio</title>
+  <head>
+  <body class="contact-body">
+     <p class="button buttonx ctoa">Vous avez un <span class="cta">projet en tête ? </span></p>
+    <p class="ctoa1">N'hésitez pas à me <span class="cta">contactez</span></p><br><br>
+    <div class="box-contact">
+       <form action="mailto:apotrekokoujean06@gmail.com" method="post" enctype="text/plain">
+        <div class="nom-prenom">
+          <div>
+            <label for="nom">Votre nom</label><br>
+            <input type="text" name="nom" class="nom">
+          </div>
+          <div>
+            <label for="prenom">Votre prénom</label><br>
+            <input type="text" name="prenom" class="nom">
+          </div>
+        </div><br>
+        <label for="sujet" class="sujet">Votre sujet</label><br>
+        <input type="text" name="sujet" class="sujet"><br><br>
+
+        <textarea name="textarea" id="textarea"></textarea><br><br>
+        <input type="submit" value="Envoyer" id="sender">
+       </form>
+    </div>  
+      <script>
+        // interaction bouton
+        const button = document.querySelector('.button');
+        button.addEventListener('mouseenter', () => {
+          button.classList.add('btn-react');
+        });
+        button.addEventListener('mouseleave', () => {
+          button.classList.remove('btn-react');
+        });
+        
+        // Couleur des éléments nav
+      window.parent.document.querySelector('[href="propos.html"]').style.color = "#FFFFFF";
+      window.parent.document.querySelector('[href="accueil.html"]').style.color = "#FFFFFF";
+      window.parent.document.querySelector('[href="projet.html"]').style.color = "#FFFFFF";
+      window.parent.document.querySelector('[href="competence.html"]').style.color = "#FFFFFF";
+      window.parent.document.querySelector('[href="contact.html"]').style.color = "#00FFFF";
+      </script>
+    </div>
+  </body>
+</html>
